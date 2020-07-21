@@ -24,6 +24,8 @@ RUN conda install -c conda-forge librosa
 RUN conda install -y jupyter
 RUN conda install -c anaconda pandas
 RUN conda install -c roebel pretty_midi
+RUN conda install -y pytorch-cpu
+RUN conda install -y seaborn
 
 # RUN conda install -y jupyter matplotlib scikit-learn nltk bokeh scikit-image
 # RUN conda install -y numpy pyyaml mkl setuptools cmake cffi
