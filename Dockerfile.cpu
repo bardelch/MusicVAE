@@ -17,6 +17,7 @@ RUN conda update --all
 
 RUN export CMAKE_PREFIX_PATH="$(dirname $(which conda))/../"
 RUN conda install -c iainsgillis music21
+# https://github.com/librosa/librosa/issues/1160
 RUN conda install numba==0.48 
 RUN conda install -c conda-forge librosa
 
